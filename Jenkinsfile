@@ -1,10 +1,10 @@
-Jenkinsfile (Pipeline déclaratif)
-pipeline {
-    agent { docker { image 'maven:3.3.3' } }
-    stages {
-        stage('build') {
-            steps {
-                sh 'java -version'
+Jenkinsfile (Declarative Pipeline)
+pipeline { 
+    agent any  
+    stages { 
+        stage('Build') { 
+            steps { 
+               echo 'This is a minimal pipeline.' 
             }
         }
     }
