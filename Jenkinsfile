@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'jar cvf test.war' 
+                sh 'jar cf test.war' 
             }
         }
     }
